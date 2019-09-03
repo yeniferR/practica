@@ -1,0 +1,356 @@
+/* header{
+    background: pink;
+    color: red; 
+}
+*/
+
+/* body header div nav ol li a */
+
+/* .link */
+/* selector de id */
+/* #potafolio */
+
+/* gris oscuro =#1d252c */
+/* gris claro = #626262 */
+/* background gris = #1b2127 */
+
+/* El producto me llego igual como se muestra en la imagen, solo tengo un pero que es que en la parte de la espalda se me hace un gordito, pero del resto todo esta bien. */
+body{
+    font-family:'Source Sans Pro', sans-serif;
+    margin:0;
+}
+ h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /* font-style: italic; */
+ }
+
+ h1{
+    font-size: 30px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    /* margin:100px 150px 70px 30px;  margin:top right bottom left; */
+    /* text-transform: uppercase;
+    text-decoration: dashed; */
+ }
+ h1 strong{
+     color:#026fff;
+ }
+
+ h2{
+     color: #2f80eb;
+     font-weight: bold;
+     text-transform: uppercase;
+     font-family:'Source Sans Pro', sans-serif;
+     font-size: 24px;
+     margin-bottom:40px; 
+
+ }
+ .hero{
+     height: 300px;
+     /* background-color: red; */
+     /* background-image: url('../imagenes/img2.jpg'); */
+     background-color: #1b2127;
+     /* background-size: 500px 300px; */
+     /* background-repeat: no-repeat; */
+     /* background-position-x: right; */
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap
+
+ }
+ .hero-image{
+     object-fit: cover;
+ }
+ .portafolio{
+    background: #fafafa;
+    padding: 20px;
+    
+}
+ .project{
+     /* border-top: 10px solid red;
+     border-right: 10px solid green;
+     border-left: 10px solid yellow;
+     border-bottom: 10px solid pink; */
+     /* border-color: green;
+     border-width: 15px;
+     border-style: solid; */
+     border: 1px solid gray;
+     border-radius: 10px;
+     margin-bottom: 15px;
+     /* margin: 10px; */
+     padding: 20px;
+     background: white;
+     display: flex;  
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap
+ }
+
+ .project-course, .project-date, .project-url{
+     margin: 10px 0;
+
+ }
+ /* .project-date{
+     margin: 10px 0;
+ } */
+  .project strong{
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+ .project-title{
+     font-size: 30px;
+     margin-top: 0;
+     margin-bottom: 10px;
+
+ }
+ .project-descripcion{
+     font-size: 20px;
+ }
+
+ .project-detail{
+    width: 50%;
+    /* margin:0 auto;  centra los datos*/
+ }
+ .project-imageContainer{
+     width: 50%;
+ }
+ .header{
+     background-color: #1b2127;
+     color: white;
+     display: flex;
+     height: 70px;
+     align-items: center;
+     justify-content: space-between;   /* justifica los elemento, un espacio entre ellos */
+     flex-wrap:  wrap
+     }
+ .header ol{
+    display: flex;  /* alineo uno al lado del otro */
+ }
+
+ ol,ul{
+    margin: 0;
+     padding: 0;
+    list-style: none;
+ }
+
+figure{
+  margin:0;
+  }
+
+  .header a{
+      display: flex;
+      color: white;
+      text-decoration: none;
+      align-items: center;
+       height: inherit;
+      padding: 0 10px;
+
+     }
+
+     .menu{
+         height: inherit;
+     }
+
+     .header ol{
+         display: flex;
+         height: inherit;
+         /* align-items: center;
+         height: inherit; */
+     }
+     .header ol li{
+         height: inherit;
+         /* display: flex; */
+         align-items: center;
+
+     }
+
+
+      .flexbox{
+         display: flex;
+         /* flex-direction: column;
+         align-items: center; */
+         flex-wrap: wrap;     }
+     .box{
+         width: 50px;
+         height: 50px;
+         margin: 5px;
+         border: 1px solid red;
+         flex-shrink: 0;
+         /* align-self: flex-start; alinerar una caja al iniio o al final */
+      } 
+
+      .footer{
+          background-color:black;
+          color: white;
+          display: flex;
+          align-items: center;  
+          justify-content: space-between;
+          flex-wrap: wrap
+      }
+
+      .footer img{
+          vertical-align: middle;
+      }
+
+      .event-list{
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .event-list-title{
+margin-left: 20px;
+      }
+    .event{
+           /* border: 1px solid red; */
+           margin: 10px;
+           width: 480px;
+           flex-shrink: 0;
+           border-radius: 10px;
+           overflow: hidden;
+           background: #f4fbff;
+
+       }
+
+       .event img{
+           width: 480px;
+           height: 200px;
+           object-fit: cover;  /*pone la imagen bonita que no se pixselee*/
+           /* align-items: center; */
+          
+       }
+
+       .event-detail{
+           margin:20px 40px;
+           margin-top: -40px;
+           background-color: white;
+           position: relative;   /* pone la imagen o eltext ensima*/
+           padding: 20px;
+           text-align: center;
+       }
+       .event-descripcion{
+            text-align: left;
+       }
+
+       .event-url{
+           color: #056fff;
+           border: 1px solid;
+           padding: 5px 20px;
+           text-decoration:none;
+           border-radius: 5px;
+       }
+       .contacto{
+           background-color: #056fff;
+           color: white;
+           height: 150px;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           flex-wrap: wrap
+
+       }
+
+
+       .social-link{
+           display: inline-block;
+           width: 50px;
+           height: 50px;
+           /* border: 1px solid white; */
+           background-size: 50px 50px;
+           margin: 0 10px;
+
+
+       }
+
+       .social-link.twitter{
+           background-image: url('../imagenes/twitter.png');
+           
+       }
+       .social-link.facebbok{
+        background-image: url('../imagenes/facebook.png');
+        
+    }
+    .social-link.github{
+        background-image: url('../imagenes/github.png');
+       
+    }
+    .social-link.instagram{
+        background-image: url('../imagenes/instagram.png');
+        
+    }
+    .form-email input{
+        border-radius: 5px;
+        border-style:solid;
+        border-color: gray;
+        padding:10px 20px 10px 25px;
+        background-image: url('../imagenes/mensaje.png');
+        background-size:15px 15px ;
+        background-repeat: no-repeat;
+        background-position-y: center; 
+        background-position-x: 5px;
+    }
+    .form-email button{
+        display: block;
+        background: transparent;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 5px;
+        width: 100px;
+        margin-top: 10px;
+        /* margin: 10px auto 0; */
+    
+    }
+    .form-email h3{
+        font-family:'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+    }
+    .contenedor{
+        /* border: 1px solid red; */
+       max-width: 1000px;
+       /* width: 100%; */
+        margin: 0 auto;
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        flex-wrap:inherit;
+        flex: 1;
+    }
+/* Desktop firt que empieces desde el MQ mas Grander */
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width: 767px){
+   .header{
+       display:block;
+       height: auto;
+   }
+   .header ol{
+       display: block;
+
+   }
+   .header ol li{
+       height: 50px;
+       
+   }
+   .header a{
+       justify-content: center;
+   }
+   .header .logo{
+       text-align: center;
+   }
+   .project {
+       display: block;
+   }
+   
+}
+@media screen and (max-width: 480px){
+    /* body{
+
+    } */
+    }
+@media screen and (max-width: 320px){
+
+    
+    }
